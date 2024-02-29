@@ -3,7 +3,7 @@ import { ArrowRightIcon, OrangeChervonLeftIcon, WhiteChrevonRightIcon } from "..
 const Slider1 = () => {
    
     return (
-        <div className="relative py-10 container px-[120px] mx-auto w-full bg-[url('./assets/images/high-quality-furniture-just-for-you.jpg')] 
+        <div className="relative py-10 container px-[106px] mx-auto w-full bg-[url('./assets/images/high-quality-furniture-just-for-you.jpg')] 
         flex justify-center" >
             <div className="w-full flex justify-start" >
                 <div className=" bg-[rgba(255,255,255,0.72)] container px-12 py-12 w-full max-w-[494px] flex flex-col gap-4" >

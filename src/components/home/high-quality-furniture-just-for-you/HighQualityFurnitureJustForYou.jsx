@@ -4,7 +4,7 @@ import { OrangeChervonLeftIcon, WhiteChrevonRightIcon } from "../../../icons";
 
 const arraySliders = [{
     id: 0,
-    component: <Slider1/>
+    component: <Slider1 />
 },
 {
     id: 1,
@@ -43,13 +43,18 @@ const HighQualityFurnitureJustForYou = () => {
                         </div>
                     )
                 })}
-                <div className="absolute top-[50%] left-[2%] -translate-y-1/2">
-                    <button
-                        onClick={handlePreviousSlide}
-                        className="bg-[#E89F71]/30 w-[48px] h-[45px] rounded-full flex justify-center items-center">
-                        <OrangeChervonLeftIcon /> </button>
+                <div className="absolute top-[50%] left-[3%] -translate-y-1/2">
+                    {currentIndex === 0 ? (
+                        <div
+                            className="bg-[#E89F71]/30 w-[48px] h-[45px] rounded-full flex justify-center items-center">
+                            <OrangeChervonLeftIcon /> </div>)
+                        : ( <button
+                            onClick={handlePreviousSlide}
+                            className="bg-[#E89F71]/30 w-[48px] h-[45px] rounded-full flex justify-center items-center">
+                            <OrangeChervonLeftIcon /> </button>)}
+
                 </div>
-                <div className="absolute top-[50%] right-[2%] -translate-y-1/2">
+                <div className="absolute top-[50%] right-[3%] -translate-y-1/2">
                     <button
                         onClick={handleNextSlide}
                         className="bg-[#E89F71] w-[48px] h-[45px] rounded-full flex justify-center items-center">
